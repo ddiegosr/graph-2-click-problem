@@ -21,3 +21,4 @@ def save_graph_to_file(G, filename='plot.png'):
     plt.subplot(121)
     nx.draw(G, pos=nx.spiral_layout(G), with_labels=True, font_weight="bold")
     plt.savefig(filename)
+    plt.close()
